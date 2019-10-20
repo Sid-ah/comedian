@@ -20,3 +20,18 @@
 .App-link {
   color: #09d3ac;
 }
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 72.00%;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}

@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import Landing from './views/Components/Components';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
 
+const FourOhFour = () => <h1>404 we are out, so should you!</h1>
+const Upcoming = () => <h1>We are working on updating this page, please come back later!</h1>
+const Videos = () => <h1>We are currently uploading the videos, please come back later!</h1>
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/"  component={Landing}/>
+        <Route exact path="/upcoming"  component={Upcoming}/>
+        <Route exact path="/videos" component={Videos} />
+        <Route component={FourOhFour}/>
+      </Switch>
+    </Router>
   );
 }
 

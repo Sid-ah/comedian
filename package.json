@@ -5,7 +5,19 @@
   "dependencies": {
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "@material-ui/core": "4.3.2",
+    "@material-ui/icons": "4.2.1",
+    "classnames": "2.2.6",
+    "history": "4.9.0",
+    "moment": "2.24.0",
+    "node-sass": "4.12.0",
+    "nouislider": "14.0.2",
+    "prop-types": "15.7.2",
+    "react-datetime": "2.16.3",
+    "react-router-dom": "5.0.1",
+    "react-slick": "0.25.2",
+    "react-swipeable-views": "0.13.3"
   },
   "scripts": {
     "start": "react-scripts start",
